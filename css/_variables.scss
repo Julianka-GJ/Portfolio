@@ -1,0 +1,36 @@
+
+$color_main_green: #069b8c;
+$color_btn: #00808c;
+$color_main: #215ae8;
+$color_text: #afb5bf;
+$color_text_mob: #cfd4dd;
+$green_h3: #138e92;
+$hover_green: #82cdc5;
+$slider_accent: #b4e900;
+$splide__arrow: #4b5659;
+$btn_hover: #cc8660;
+$linear_gradient: 45deg, hsl(223, 81%, 52%), hsl(43, 81%, 52%);
+$mask_img: linear-gradient(to top, transparent, rgba(black, 0.99));
+
+$box_shadow: 10px 5px 15px rgba(92, 91, 91, 0.75);
+$background: linear-gradient(to right, rgb(156, 163, 175), rgb(75, 85, 99), rgb(30, 64, 175));
+$background_title: linear-gradient(45deg, #21c79b, #215ae8);
+$background_h1: linear-gradient(45deg, #21c79b, hsl(223, 81%, 52%), hsl(43, 81%, 52%));
+$background_mob: linear-gradient(to right, rgb(104, 110, 119), rgb(75, 85, 99), rgb(30, 64, 175));
+
+$margin_bottom_section: 50px;
+
+
+@mixin title_h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 54px;
+    color: $color_main;
+}
+
+@mixin section_position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
