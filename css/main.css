@@ -1071,11 +1071,11 @@ h2 {
             justify-content: space-between;
   }
   .projects .container-item .project-info {
-    width: 80%;
+    width: 95%;
     margin: 0 0 20px 0;
   }
   .projects .container-item .projects-content {
-    width: 80%;
+    width: 95%;
   }
   .projects .container-item .projects-content .projects-description h3 {
     text-align: center;
@@ -1165,7 +1165,7 @@ h2 {
             align-items: center;
   }
   .about-me .about-container .about-img {
-    width: 70%;
+    width: 80%;
     -webkit-box-shadow: none;
             box-shadow: none;
     -webkit-transform: rotate(0);
@@ -1185,9 +1185,10 @@ h2 {
   }
   .about-me .about-container .about-name p {
     font-size: 16px;
+    background-image: linear-gradient(45deg, #eaf7f3, #21c79b, #e8b021);
   }
   .splide__slide .splide__slide__container img {
-    max-height: 40vh;
+    max-height: 30vh;
   }
   .additional-info .education, .additional-info .contacts {
     width: 95%;
@@ -1213,17 +1214,33 @@ h2 {
   }
 }
 
-@media (max-width: 375px) {
-  .about-me .about-container .about-img {
-    width: 80%;
-  }
-  .about-me .about-container .about-name p {
-    font-size: 16px;
-    background-image: linear-gradient(45deg, #eaf7f3, #21c79b, #e8b021);
+@media (max-width: 430px) {
+  .splide {
+    margin-bottom: 30px;
   }
   .splide__slide .splide__slide__container img {
-    max-height: 35vh;
+    max-height: 20vh;
   }
+  .projects {
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .projects .container-item .projects-content .projects-link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .container-item .projects-content .projects-link .projects-btn {
+    padding: 7px 15px;
+    margin-bottom: 15px;
+  }
+  .projects .container-item .projects-content .projects-description p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
   .projects .container-item .project-info {
     width: 100%;
     margin: 0 0 20px 0;

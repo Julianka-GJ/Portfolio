@@ -808,12 +808,12 @@ h2 {
             justify-content: space-between;
 
             .project-info {
-                width: 80%;
+                width: 95%;
                 margin: 0 0 20px 0;
             }
 
             .projects-content {
-                width: 80%;
+                width: 95%;
 
                 .projects-description {
                     h3 {
@@ -918,7 +918,7 @@ h2 {
            align-items: center;
 
            .about-img {
-                width: 70%;
+                width: 80%;
                 box-shadow: none;
                 transform: rotate(0);
             }
@@ -936,6 +936,7 @@ h2 {
     
                 p {
                     font-size: 16px;
+                    background-image: linear-gradient(45deg, #eaf7f3, #21c79b, hsl(43, 81%, 52%));
                 }
             }
         }
@@ -943,7 +944,7 @@ h2 {
 
     .splide__slide {
         .splide__slide__container img{
-            max-height: 40vh;
+            max-height: 30vh;
         }
     }
 
@@ -971,28 +972,43 @@ h2 {
     }
 }
 
-@media (max-width: 375px) {
-    .about-me {
-        .about-container {
-           .about-img {
-                width: 80%;
-            }
-
-            .about-name {
-                p {
-                    font-size: 16px;
-                    background-image: linear-gradient(45deg, #eaf7f3, #21c79b, hsl(43, 81%, 52%));
-                }
-            }
-        }
+@media (max-width: 430px) {
+    .splide {
+        margin-bottom: 30px;
     }
 
     .splide__slide {
         .splide__slide__container img{
-            max-height: 35vh;
+            max-height: 20vh;
         }
     }
 
+    .projects {
+        gap: 30px;
+        margin-bottom: 30px;
+    
+        .container-item {
+            .projects-content {
+                .projects-link {
+                    flex-direction: column;
+
+                    .projects-btn {
+                        padding: 7px 15px;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .projects-description {
+                    p {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: 375px) {
     .projects {
         .container-item {
             .project-info {
